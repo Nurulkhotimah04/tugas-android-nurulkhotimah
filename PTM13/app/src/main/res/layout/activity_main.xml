@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#99F29C">
+
+    <!-- Gambar Logo -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/admin512"
+        android:contentDescription="Logo"
+        android:layout_marginBottom="24dp"
+        android:scaleType="fitCenter" />
+
+    <!-- Input Email -->
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Input Password -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp" />
+
+    <!-- Tombol Register -->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar (Register)"
+        android:layout_marginTop="24dp" />
+
+    <!-- Tombol Login -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masuk (Login)" />
+
+    <!-- Status Login -->
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Belum Login"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Tombol Ambil Token FCM -->
+    <Button
+        android:id="@+id/btn_get_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cek Token FCM"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>
