@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#B8CCFF">
+
+    <!-- Judul Aplikasi -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung Luas Persegi Panjang"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Input Panjang -->
+    <EditText
+        android:id="@+id/edit_text_panjang_persegi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Panjang"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Input Lebar -->
+    <EditText
+        android:id="@+id/edit_text_lebar_persegi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Lebar"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Tombol Hitung -->
+    <Button
+        android:id="@+id/button_hitung_luas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung Luas"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#0E4168"/>
+
+    <!-- Text Hasil -->
+    <TextView
+        android:id="@+id/text_view_hasil_luas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil Luas: "
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
