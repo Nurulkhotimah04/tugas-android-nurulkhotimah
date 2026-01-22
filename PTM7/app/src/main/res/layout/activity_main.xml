@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/switch_mode_gelap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode Gelap"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Shared Preferences"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_nama_pengguna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama User"
+            android:inputType="textPersonName"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/button_simpan_nama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Simpan"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/button_hapus_nama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hapus"
+                android:backgroundTint="#D32F2F"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_hasil_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Belum ada data"
+            android:layout_marginTop="16dp"
+            android:textStyle="italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#72E0DE"
+            android:layout_marginVertical="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Internal File Storage"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_catatan"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Tulis catatan panjang di sini..."
+            android:gravity="top|start"
+            android:background="#D9DFF8"
+            android:padding="12dp"
+            android:inputType="textMultiLine"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/button_simpan_catatan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Simpan File"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/button_baca_catatan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Baca File"
+                android:backgroundTint="#388E3C"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
